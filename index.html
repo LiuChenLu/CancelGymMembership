@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Membership Cancellation Agent</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gym Membership Cancellation Agent</h1>
+        <p>Put your phone on speaker next to your laptop and let the agent handle the call.</p>
+        
+        <div id="user-details-container">
+            <h2>Your Details</h2>
+            <label for="userName">Name:</label>
+            <input type="text" id="userName" placeholder="e.g., John Doe">
+            <label for="membershipNumber">Membership Number:</label>
+            <input type="text" id="membershipNumber" placeholder="e.g., 12345">
+            <button id="saveButton">Save Details</button>
+        </div>
+
+        <div id="status-container">
+            <p>Status: <span id="status">Idle</span></p>
+        </div>
+
+        <button id="startButton" disabled>Start Agent</button>
+        <button id="processSpeechButton" disabled>Process My Speech</button>
+
+        <div id="realtime-transcript-container">
+            <h2>Live Transcript</h2>
+            <div id="realtime-transcript"></div>
+        </div>
+
+        <div id="conversation-container">
+            <h2>Conversation Log</h2>
+            <div id="conversation"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

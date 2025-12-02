@@ -1,0 +1,96 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#user-details-container {
+    margin-bottom: 2rem;
+}
+
+#user-details-container input {
+    display: block;
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#user-details-container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+#status-container {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+#conversation-container {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+#conversation {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    min-height: 100px;
+    border-radius: 4px;
+    overflow-y: auto;
+}
+
+#realtime-transcript-container {
+    margin-top: 2rem;
+    text-align: left;
+}
+
+#realtime-transcript {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    min-height: 50px;
+    border-radius: 4px;
+    overflow-y: auto;
+    background-color: #fafafa;
+}
+
+#processSpeechButton {
+    background-color: #2196F3;
+    margin-left: 10px;
+}
+
+#processSpeechButton:hover {
+    background-color: #0b7dda;
+}
+
+#processSpeechButton:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
